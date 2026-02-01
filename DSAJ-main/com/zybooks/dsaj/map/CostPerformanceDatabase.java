@@ -42,7 +42,7 @@ public class CostPerformanceDatabase {
             if (op != null && e.getValue() <= op)
                 System.out.println(String.format("(%d,%d) dominates (%d,%d)",oc,op,e.getKey(),e.getValue()));
             oc = e.getKey();
-            op = e.getPrev();
+            op = e.getValue();
         }
     }
 
